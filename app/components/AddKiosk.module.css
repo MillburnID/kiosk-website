@@ -1,0 +1,155 @@
+.promptButton {
+  /* position: absolute; */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  aspect-ratio: 1 / 1;
+  font-weight: semi-bold;
+  font-size: 1.25rem;
+  color: #374151;
+  transition: 0.3s;
+}
+
+.promptButton:hover {
+  background-color: #fdfdfd;
+  color: #000;
+}
+
+.prompt {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.prompt > div {
+  background-color: #fff;
+  max-width: min-content;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.prompt header {
+  padding: 1rem;
+  border-bottom: 1px solid #d1d5db;
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prompt main {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt main form {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; */
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 0.75rem;
+  column-gap: 1.5rem;
+}
+
+.prompt main form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.25rem;
+}
+
+.prompt main form input[type="text"],
+.prompt main form input[type="number"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.prompt main form .direction > div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.prompt footer {
+  padding: 1rem;
+  border-top: 1px solid #d1d5db;
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.prompt footer .reset {
+  /* secondary underline style */
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  /* text-decoration-thickness: 2px; */
+  /* text-underline-offset: 2px; */
+  color: #808891;
+  transition: all 0.3s ease-in-out;
+}
+
+.prompt footer .reset:hover {
+  text-decoration-color: #374151;
+  color: #374151;
+}
+
+.prompt footer .add {
+  /* button style */
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #374151;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+
+.prompt footer .add:hover {
+  background-color: #f9fafb;
+  color: #000;
+}

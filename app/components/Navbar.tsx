@@ -5,10 +5,10 @@ import React from "react";
 export default function Navbar() {
   return (
     <div className={styles.navbar}>
-      <Link href="/">Home</Link>
+      <Link href="/home">Home</Link>
       <Link href="/live">Live</Link>
-      <Link href="/record">Record</Link>
-      <Link href="/students">Students</Link>
+      <Link href="/">Record</Link>
+      <Link href="/kiosks">Kiosks</Link>
     </div>
   );
 }

@@ -14,5 +14,10 @@
     "react": "^18",
     "react-dom": "^18",
     "react-google-button": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "typescript": "5.3.3"
   }
 }

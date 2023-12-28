@@ -18,6 +18,7 @@
 }
 
 .signOutButton:hover {
-  color: red;
+  /* color: red; */
+  color: #000;
   background-color: #e6e8eb;
 }
